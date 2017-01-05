@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 
 .save {
     float: right;
-}
+    }
 
 .post-form textarea, .post-form input {
     width: 100%;
@@ -51,6 +51,10 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+}
+
+.top-menu a{
+  color: #8E5A9C;
 }
 
 .post {
@@ -69,4 +73,15 @@ p {
 
 .post h1 a, .post h1 a:visited {
     color: #B3049B;
+    font-size: 30px;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+    color: #828282;
+}
+
+.post a {
+  color: #828282;
+  font-size: 18px;
 }
