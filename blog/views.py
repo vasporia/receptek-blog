@@ -87,3 +87,7 @@ def comment_remove(request, pk):
     post_pk = comment.post.pk
     comment.delete()
     return redirect('post_detail', pk=post_pk)
+
+def post_category_list(request,type):
+    posts = Post.objects.filter(category=type).order_by('created_date')
+    return render(request, 'blog/post_category_list.html', {'posts': posts})

@@ -31,6 +31,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
+    color: #B3049B;
 }
 
 .date {
@@ -54,6 +55,15 @@ h1, h2, h3, h4 {
 }
 
 .top-menu a{
+  color: #8E5A9C;
+}
+.top-menu_category, .top-menu_category:hover, .top-menu_category:visited {
+  color: #8E5A9C;
+  font-family: 'Lobster';
+  font-size: 22pt;
+}
+
+.top-menu_category a{
   color: #8E5A9C;
 }
 
@@ -84,4 +94,9 @@ p {
 .post a {
   color: #828282;
   font-size: 18px;
+}
+
+.numbers {
+  color: #B3049B;
+  font-size: 30px;
 }

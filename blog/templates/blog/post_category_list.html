@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+          <ol class="numbers">
+          {% for post in posts %}
+            <li><h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1></li>
+
+          {% endfor %}
+          </ol>
+  {% endblock content %}

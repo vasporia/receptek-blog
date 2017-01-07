@@ -2,8 +2,7 @@ from django.db import models
 
 from django.utils import timezone
 
-CATEGORIES=(("LEV","LEVESEK"),
-("FO","FŐÉTELEK"),("ED","ÉDESSÉGEK"),("SO","SÓSAK"))
+CATEGORIES=(("LEV","LEVESEK"), ("FO","FŐÉTELEK"), ("ED","ÉDESSÉGEK"), ("SO","SÓSAK"), ("KOR", "KÖRETEK"))
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
