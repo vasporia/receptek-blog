@@ -23,5 +23,5 @@ class Migration(migrations.Migration):
                 ('published_date', models.DateTimeField(blank=True, null=True)),
                 ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
             ],
-        ),
+        )
     ]

@@ -2,10 +2,13 @@ from django.db import models
 
 from django.utils import timezone
 
+CATEGORIES=(("LEV","LEVESEK"),
+("FO","FŐÉTELEK"),("ED","ÉDESSÉGEK"),("SO","SÓSAK"))
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
+    category = models.CharField(max_length=3, choices=CATEGORIES)
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)

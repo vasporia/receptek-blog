@@ -1,12 +1,13 @@
 from django.shortcuts import render,get_object_or_404,redirect
 from django.utils import timezone
 from .forms import PostForm, CommentForm
-from .models import Post, Comment
+from .models import Post, Comment, CATEGORIES
 from django.contrib.auth.decorators import login_required
 
 def post_list(request):
     posts=Post.objects.filter(published_date__lte=timezone.now())
-    return render(request, 'blog/post_list.html',{'posts':posts})
+
+    return render(request, 'blog/post_list.html',{'posts':posts, 'XXX': CATEGORIES})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
